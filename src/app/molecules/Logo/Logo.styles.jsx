@@ -15,5 +15,8 @@ export const LogoContainer = styled.div`
 
     h1 {
         margin-left: 10px;
+        font-size: 25px;
+        margin-top: 5px;
+        text-shadow: 0px 3px 1px rgba(0,0,0,0.1);
     }
 `

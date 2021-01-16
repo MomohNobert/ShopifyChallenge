@@ -6,7 +6,7 @@ export const LogoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid rgba(0,0,0,0.2);
+    border-right: 1px solid rgba(0,0,0,0.05);
     font-family: 'Merriweather', serif;
 
     img {

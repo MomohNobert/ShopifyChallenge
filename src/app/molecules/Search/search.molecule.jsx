@@ -1,5 +1,11 @@
+import { SearchContainer } from './search.styles';
+
 const Search = () => {
-    return <div>Search</div>
+    return (
+        <SearchContainer>
+            Search
+        </SearchContainer>
+    )
 }
 
 export default Search;

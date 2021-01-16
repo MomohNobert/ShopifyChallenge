@@ -47,4 +47,7 @@ export const ContentContainer = styled.div`
     margin-top: 12.5vh;
     min-height: 87.5vh;
     background-color: rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 `;

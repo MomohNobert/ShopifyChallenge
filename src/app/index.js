@@ -1,11 +1,14 @@
-import Header from './components/header/header.component';
-import { GlobalStyle } from './index.styles';
+import Header from './components/Header/header.component';
+import { Content, GlobalStyle } from './index.styles';
 
 function App() {
   return (
     <>
       <GlobalStyle />
       <Header />
+      <Content>
+
+      </Content>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -42,3 +42,9 @@ export const GlobalStyle = createGlobalStyle`
         background: #8a8aa8;
     }
 `
+
+export const Content = styled.div`
+    margin-top: 12.5vh;
+    min-height: 87.5vh;
+    background-color: rgba(0,0,0,0.05);
+`;

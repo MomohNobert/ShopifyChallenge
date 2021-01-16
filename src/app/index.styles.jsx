@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
         border: 0;
+        outline: none;
     }
 
     a {

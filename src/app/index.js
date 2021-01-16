@@ -1,7 +1,7 @@
 import Header from './components/Header/header.component';
-import Movies from './components/Movies/Movies.component';
-import Nominations from './components/Nominations/Nominations.component';
 import { ContentContainer, GlobalStyle } from './index.styles';
+import Movies from './templates/Movies/Movies.template';
+import Nominations from './templates/Nominations/Nominations.template';
 
 function App() {
   return (

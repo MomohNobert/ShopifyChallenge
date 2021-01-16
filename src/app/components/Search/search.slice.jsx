@@ -5,14 +5,16 @@ export const initialState = {
     loading: false,
     hasErrors: false,
     movies: [],
+    searchValue: null
 }
 
 const moviesSlice = createSlice({
     name: 'movies',
     initialState,
     reducers: {
-        getMovies: (state) => {
+        getMovies: (state, { payload }) => {
             state.loading = true
+            state.searchValue = payload
         },
         getMoviesSuccess: (state, { payload }) => {
             state.movies = payload?.Search
@@ -28,9 +30,8 @@ const moviesSlice = createSlice({
 
 export function fetchMovies(searchTerm) {
     return async dispatch => {
-        dispatch(getMovies)
-        console.log(searchTerm)
-
+        dispatch(getMovies(searchTerm))
+        
         try {
             const response = await fetch(FETCH_URL + `s=${searchTerm}`)
             const data = await response.json()

@@ -1,8 +1,14 @@
 import { InputContainer } from './Input.styles';
 
-const Input = () => {
+const Input = ({ setSearchValue }) => {
+    const changeHandler = value => {
+        setSearchValue(value)
+    }
+
     return (
-        <InputContainer />
+        <InputContainer 
+            onChange={event => changeHandler(event.target.value)}
+        />
     )
 }
 

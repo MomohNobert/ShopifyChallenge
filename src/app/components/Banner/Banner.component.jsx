@@ -11,7 +11,7 @@ const Banner = () => {
             complete={+currentSize === 5 ? 1 : 0}
         >
             <img src={BannerImg} alt="banner" />
-            <h3>{currentSize}</h3>
+            <span>{currentSize}</span>
         </BannerContainer>
     )
 }

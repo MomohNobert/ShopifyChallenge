@@ -15,8 +15,9 @@ export const BannerContainer = styled.div`
         opacity: ${({complete}) => complete ? 1 : 0.5 };
     }
 
-    h3 {
+    span {
         position: absolute;
         top: 27.5%;
+        font-size: 20px;
     }
 `;

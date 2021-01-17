@@ -1,10 +1,10 @@
 import NomCard from "../../molecules/NominationCard/NomCard.component";
 import { NCHolder, NCsContainer } from "./NomCards.styles"
 
-const NomCards = ({ currentNominations}) => {
+const NomCards = ({ currentNominations, currentSize }) => {
     return (
         <NCsContainer>
-            <h1>Current Nominations</h1>
+            <h1>{currentSize === 5 ? "Nominations Complete": "Current Nominations"}</h1>
             <NCHolder>
                 {
                     currentNominations.map(nom => (

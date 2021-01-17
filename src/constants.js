@@ -1,1 +1,1 @@
-export const FETCH_URL = "http://www.omdbapi.com/?apikey=ae015943&"
+export const FETCH_URL = "https://www.omdbapi.com/?apikey=ae015943&"

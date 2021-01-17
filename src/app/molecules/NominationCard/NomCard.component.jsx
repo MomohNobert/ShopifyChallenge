@@ -16,7 +16,6 @@ const NomCard = (props) => {
             <NCImg
                 onClick={() => {
                     dispatch(removeNomination(props.nom))
-                    console.log(props.nom)
                 }}
             >
                 <img src={DeleteImg} alt="delete" />

@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
 export const LoaderOverlay = styled.div`
-    height: 100%;
+    height: 70vh;
     width: 100%;
     display: grid;
     place-items: center;
 `;
 
 export const LoaderContainer = styled.div`
-    width: 30px;
-    height: 30px;
-    border: 3px solid rgba(0, 128, 0, 0.2);
+    width: 75px;
+    height: 75px;
+    border: 5px solid rgba(240, 255, 0, 0.1);
     border-radius: 50%;
-    border-top-color: rgb(0, 128, 0);
+    border-top-color: yellow;
     animation: spin 1s ease-in-out infinite;
     -webkit-animation: spin 1s ease-in-out infinite;
     @keyframes spin {

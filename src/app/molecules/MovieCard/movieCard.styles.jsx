@@ -42,15 +42,15 @@ export const MCButton = styled.button`
     right: 30px;
     border-radius: 5px;
     font-size: 15px;
-    cursor: pointer;
-    border: 1px solid black;
-    color: black;
-    background-color: white;
+    cursor: ${({disabled}) => disabled  ? "no-drop" : "pointer"};
+    border: ${({disabled}) => disabled  ? "1px solid grey" : "1px solid black"};
+    color: ${({disabled}) => disabled  ? "white" : "black"};
+    background-color: ${({disabled}) => disabled  ? "grey" : "white"};
     transition: all 0.25s linear;
 
     &:hover {
-        border: 1px solid white;
-        color: white;
-        background-color: black;     
+        border: ${({disabled}) => disabled  ? "1px solid grey" : "1px solid white"};
+    color: white;
+    background-color: ${({disabled}) => disabled  ? "grey" : "black"};   
     }
 `

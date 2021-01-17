@@ -13,6 +13,8 @@ redux-toolkit.
 
 Hosted on Netlify at https://mn-shopify.netlify.app/.
 
+90+ scores on every metric, based on Google's preffered Web Vitals analytics.
+
 ## Available Scripts
 
 In the project directory, you can run:

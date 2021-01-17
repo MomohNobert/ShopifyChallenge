@@ -8,13 +8,9 @@ import SearchImg from './assets/search.svg';
 
 const Search = () => {
     const [searchValue, setSearchValue] = useState(null);
-    console.log(searchValue);
-
     const dispatch = useDispatch();
-    // const { movies, loading, hasErrors } = useSelector(moviesSelector);
 
     const clickHandler = value => {
-        console.log(value);
         if (value) {
             dispatch(fetchMovies(value))
         }

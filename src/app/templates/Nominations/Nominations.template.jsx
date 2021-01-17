@@ -10,7 +10,7 @@ const Nominations = () => {
         if (currentSize <= 0) {
             return <EmptyNom />
         } else {
-            return <NomCards currentNominations={currentNominations} />
+            return <NomCards currentNominations={currentNominations} currentSize={currentSize} />
         }
     }
 

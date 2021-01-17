@@ -10,7 +10,7 @@ export const SearchContainer = styled.div`
     justify-content: center;
 `
 
-export const SearchIconContainer = styled.div`
+export const SearchIconContainer = styled.label`
     height: 40px;
     width: 40px;
     position: absolute;

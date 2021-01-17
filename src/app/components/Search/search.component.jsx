@@ -23,6 +23,7 @@ const Search = () => {
             />
             <SearchIconContainer
                 onClick={() => clickHandler(searchValue)}
+                for="search"
             >
                 <img src={SearchImg} alt="search" />
             </SearchIconContainer>

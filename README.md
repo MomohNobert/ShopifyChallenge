@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+## About the Project.
+
+Built with CRA and Redux Toolkit to match the application stack.
+
+Created components to handle most possible scenarios of the application's lifecycle.
+
+Rehydrating state between use with redux-persist.
+
+Can't currently work with transitions due to incompatibility between react-transition-group and
+redux-toolkit.
+
+Hosted on Netlify at https://mn-shopify.netlify.app/.
+
 ## Available Scripts
 
 In the project directory, you can run:

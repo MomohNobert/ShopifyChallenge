@@ -1,7 +1,7 @@
 import Logo from "../../molecules/Logo/Logo.molecule";
 import Banner from "../Banner/Banner.component";
 import Search from "../Search/search.component";
-import { HeaderContainer } from "./header.styles";
+import { HeaderContainer } from "./Header.styles";
 
 const Header = () => {
     return (

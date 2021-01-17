@@ -1,5 +1,5 @@
-import Header from './components/Header/header.component';
 import { ContentContainer, GlobalStyle } from './index.styles';
+import Header from './components/Header/Header.component';
 import Movies from './templates/Movies/Movies.template';
 import Nominations from './templates/Nominations/Nominations.template';
 

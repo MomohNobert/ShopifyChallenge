@@ -1,16 +1,21 @@
 import { MoviesContainer } from "./Movies.styles";
 import { useSelector } from 'react-redux';
 import EmptyMovies from "../../components/EmptyMovie/emptyMovie.component";
+import Loader from '../../components/Loader/loader.component';
+import MovieCards from "../../components/MovieCards/movieCards.component";
 
 const Movies = () => {
     const { loading, hasErrors, movies, searchValue } = useSelector(state => state.movies);
     console.log(loading, hasErrors, movies, searchValue);
+    console.log(movies)
 
     const currentComponent = () => {
         if (!searchValue) {
             return <EmptyMovies />
-        } else {
-            return null
+        } else if (loading) {
+            return <Loader />
+        } else if (movies.length > 0) {
+            return <MovieCards searchValue={searchValue} movies={movies} />
         }
     }
 
